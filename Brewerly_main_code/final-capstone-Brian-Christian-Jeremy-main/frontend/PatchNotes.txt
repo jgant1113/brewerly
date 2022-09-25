@@ -1,0 +1,41 @@
+As of September 5th:
+
+Patch notes:
+	Front end:
+		Add shared URL for the Beer Lover or Brewer Components to reuse.
+		Added a radio to register
+		Adjusted handleSubmit to pass state.role into user object's role field
+		Wrapped all inputs in Register.js in a form
+		Wrapped the submit button and link in separate divs
+		Changed 'log in' text to 'register' in the submit button in register.js
+		Adjusted radio to pass their value into state
+		Added a default of Beer Lover to radio choices.
+		Added onChangeValue to register. This lets us pass different roles when a user registers.
+		Added basic component for Brewers(To use later)
+		Added basic component to Beer Lovers(To use later)
+	Back end:
+		Created a script for creating a brewery table
+		Created BreweryDao interface and JdbcBreweryDao Class(create function unfisnished)
+		Created a Brewery Controller
+		Created a Brewery Model
+
+Note some stylings might be weird since I added this in. Otherwise
+it SHOULD be functioning. Still need to actually access roles to display
+different components once on the home page.
+
+As of September 9th:
+
+Patch notes:
+	Back end:
+		Adjusted brewery.sql to provide some basic inserts to get you started
+		Adjusted breweryController create methods to make sure we can add new ones
+		Adjusted search by name and search by location endpoints for specificity
+		Created profile dao, controller, and model
+		Tested all endpoints to ensure they work
+
+Note the JSON object profile will expect would look like:
+	profile {username: 'someUsername', profileType: 'their type'};
+Keep in mind the keys you pass. The brewery object would look like:
+	brewery {name: 'some name', location: 'some location'}
+If a post method doesn't seem to work check your key names.
+    

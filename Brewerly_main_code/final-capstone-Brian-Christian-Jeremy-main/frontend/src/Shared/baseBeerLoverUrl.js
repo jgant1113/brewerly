@@ -1,0 +1,1 @@
+export const baseBeerLoverUrl = 'http://localhost:8081/lover';
